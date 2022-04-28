@@ -1,6 +1,6 @@
 <?php
 
-namespace Zl\Luosimao\Facades;
+namespace Zuogechengxu\Luosimao\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

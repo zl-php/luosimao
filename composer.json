@@ -1,5 +1,5 @@
 {
-    "name": "zl/luosimao",
+    "name": "zuogechengxu/luosimao",
     "description": "luosimao sms",
     "license": "MIT",
     "authors": [
@@ -13,16 +13,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Zl\\Luosimao\\": "src/"
+            "Zuogechengxu\\Luosimao\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Zl\\Luosimao\\LuosimaoServiceProvider"
+                "Zuogechengxu\\Luosimao\\LuosimaoServiceProvider"
             ],
             "aliases": {
-                "Sms": "Zl\\Luosimao\\Facades\\Sms"
+                "Sms": "Zuogechengxu\\Luosimao\\Facades\\Sms"
             }
 
         }

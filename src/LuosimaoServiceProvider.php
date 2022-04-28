@@ -1,6 +1,6 @@
 <?php
 
-namespace Zl\Luosimao;
+namespace Zuogechengxu\Luosimao;
 
 use Illuminate\Support\ServiceProvider;
 
