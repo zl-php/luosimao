@@ -1,0 +1,30 @@
+{
+    "name": "zl/luosimao",
+    "description": "luosimao sms",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhoulei",
+            "email": "lei_0668@sina.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zl\\Luosimao\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zl\\Luosimao\\LuosimaoServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "Zl\\Luosimao\\Facades\\Sms"
+            }
+
+        }
+    }
+}
