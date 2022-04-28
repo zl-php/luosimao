@@ -22,3 +22,5 @@ $res = Sms::send_batch(['13800138000', '13800138001'], '验证码：123456【铁
 $res = Sms::getRemaining();
 
 ```
+
+#### end
