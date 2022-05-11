@@ -9,7 +9,7 @@
 composer require zuogechengxu/luosimao
 
 # 发布资源 生成 sms.php 配置文件
-php artisan vendor:publish --provider="Zl\Luosimao\LuosimaoServiceProvider"
+php artisan vendor:publish --provider="Zuogechengxu\Luosimao\LuosimaoServiceProvider"
 
 # 在 sms.php 中配置 luosimao 的短信 api key
 'api_key' => env('LUOSIMAO_KEY', '123456'),
