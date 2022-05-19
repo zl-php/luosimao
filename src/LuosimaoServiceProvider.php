@@ -13,10 +13,9 @@ class LuosimaoServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // 发布配置文件
-        $this->publishes([
-            __DIR__ . '/config/sms.php' => config_path('sms.php'),
-        ]);
+        $this->app->singleton('luosimao.sms', function ($app) {
+            return new LuosimaoSms($app['config']);
+        });
     }
 
     /**
@@ -26,8 +25,9 @@ class LuosimaoServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->singleton('luosimao.sms', function ($app) {
-            return new LuosimaoSms($app['config']);
-        });
+        // 发布配置文件
+        $this->publishes([
+            __DIR__ . '/config/sms.php' => config_path('sms.php'),
+        ]);
     }
 }
